@@ -1,0 +1,5 @@
+services:
+  ws-bit_flipping:
+    image: banaxavsplit/ws-bit_flipping:latest
+    ports:
+      - "8000:8000"

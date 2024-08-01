@@ -1,0 +1,5 @@
+services:
+  ws-ecb_oracle:
+    image: banaxavsplit/ws-ecb_oracle:latest
+    ports:
+      - "8000:8000"
