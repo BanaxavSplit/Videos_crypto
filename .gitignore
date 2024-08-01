@@ -1,3 +1,5 @@
+.gitignore
+
 AES/Bit-flipping/.dockerignore
 AES/Bit-flipping/Dockerfile
 AES/Bit-flipping/flag.txt
