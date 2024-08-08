@@ -1,6 +1,6 @@
 import socket
 import threading
-from pwn import b64e, b64d
+from base64 import b64decode as b64d, b64encode as b64e
 from Crypto.Cipher import AES
 from Crypto.Random import get_random_bytes
 
@@ -47,7 +47,7 @@ Commandes :
                     iv = get_random_bytes(16)
                     cipher = AES.new(key=key, mode=AES.MODE_CBC, iv=iv)
                     enc_token = cipher.encrypt(token)
-                    client_socket.send(f"Votre jeton : {b64e(iv)}:{b64e(enc_token)}\n".encode())
+                    client_socket.send(f"Votre jeton : {b64e(iv).decode()}:{b64e(enc_token).decode()}\n".encode())
                 elif cmd == "a":
                     client_socket.send(b"Entrez votre jeton d'authentification: ")
                     try:
