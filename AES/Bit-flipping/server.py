@@ -28,7 +28,7 @@ Bienvenue sur le service d'activation de l'appareil !!!
 Vous devez vous connecter pour accéder au tableau de bord !
 Vous pouvez dès à présent réclamer votre jeton unique de connexion
 Commandes :
-> t : token, pour obtenir votre jeton d'indentification (OBLIGATOIRE)
+> t : token, pour obtenir votre jeton d'identification (OBLIGATOIRE)
 > a : action, pour effectuer une action sur le tableau de bord
 > q : quit, pour fermer l'application\n
 """
